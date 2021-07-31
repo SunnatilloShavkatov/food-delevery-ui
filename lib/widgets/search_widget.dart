@@ -6,7 +6,6 @@ class SearchWidget extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: 10,top: 5,right: 10,bottom: 5),
       child: TextField(
-
         decoration: InputDecoration(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(5.0)),

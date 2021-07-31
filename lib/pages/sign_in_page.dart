@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_app/animation/scale_route.dart';
-import 'package:flutter_app/pages/food_details_page.dart';
-import 'package:flutter_app/pages/sign_up_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:food_delivery/animation/scale_route.dart';
+import 'package:food_delivery/pages/sign_up_page.dart';
 
 class SignInPage extends StatefulWidget {
   @override

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/animation/rotation_route.dart';
-import 'package:flutter_app/animation/scale_route.dart';
-import 'package:flutter_app/pages/food_details_page.dart';
+import 'package:food_delivery/animation/scale_route.dart';
+import 'package:food_delivery/pages/food_details_page.dart';
 
 class PopularFoodsWidget extends StatefulWidget {
   @override
@@ -27,21 +26,21 @@ class _PopularFoodsWidgetState extends State<PopularFoodsWidget> {
 }
 
 class PopularFoodTiles extends StatelessWidget {
-  String name;
-  String imageUrl;
-  String rating;
-  String numberOfRating;
-  String price;
-  String slug;
+  final String name;
+  final String imageUrl;
+  final String rating;
+  final String numberOfRating;
+  final String price;
+  final String slug;
 
   PopularFoodTiles(
-      {Key key,
-      @required this.name,
-      @required this.imageUrl,
-      @required this.rating,
-      @required this.numberOfRating,
-      @required this.price,
-      @required this.slug})
+      {Key? key,
+      required this.name,
+      required this.imageUrl,
+      required this.rating,
+      required this.numberOfRating,
+      required this.price,
+      required this.slug})
       : super(key: key);
 
   @override
@@ -331,5 +330,3 @@ class PopularFoodItems extends StatelessWidget {
     );
   }
 }
-
-

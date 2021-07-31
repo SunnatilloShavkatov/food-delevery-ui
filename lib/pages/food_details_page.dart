@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/animation/scale_route.dart';
-import 'package:flutter_app/pages/food_order_page.dart';
-import 'package:flutter_app/widgets/food_details_slider.dart';
+import 'package:food_delivery/animation/scale_route.dart';
+import 'package:food_delivery/widgets/food_details_slider.dart';
+
+import 'food_order_page.dart';
 
 class FoodDetailsPage extends StatefulWidget {
   @override
@@ -57,14 +58,14 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                 elevation: 1,
                 margin: EdgeInsets.all(5),
               ),
-              /*  Container(
+              Container(
                 height: 150,
-                child:FoodDetailsSlider(
-                    slideImage1: "assets/images/bestfood/ic_best_food_8.jpeg",
-                    slideImage2: "assets/images/bestfood/ic_best_food_9.jpeg",
-                    slideImage3: "assets/images/bestfood/ic_best_food_10.jpeg"),
-              ),*/
-
+                child: FoodDetailsSlider(
+                  slideImage1: "assets/images/bestfood/ic_best_food_8.jpeg",
+                  slideImage2: "assets/images/bestfood/ic_best_food_9.jpeg",
+                  slideImage3: "assets/images/bestfood/ic_best_food_10.jpeg",
+                ),
+              ),
               FoodTitleWidget(
                   productName: "Grilled Salmon",
                   productPrice: "\$96.00",
@@ -121,15 +122,15 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
 }
 
 class FoodTitleWidget extends StatelessWidget {
-  String productName;
-  String productPrice;
-  String productHost;
+  final String productName;
+  final String productPrice;
+  final String productHost;
 
   FoodTitleWidget({
-    Key key,
-    @required this.productName,
-    @required this.productPrice,
-    @required this.productHost,
+    Key? key,
+    required this.productName,
+    required this.productPrice,
+    required this.productHost,
   }) : super(key: key);
 
   @override

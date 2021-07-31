@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/animation/scale_route.dart';
-import 'package:flutter_app/pages/sign_in_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:food_delivery/animation/scale_route.dart';
+
+import 'sign_in_page.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
