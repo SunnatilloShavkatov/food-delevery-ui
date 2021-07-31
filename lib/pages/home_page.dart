@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/animation/scale_route.dart';
 import 'package:flutter_app/pages/sign_in_page.dart';
-import 'package:flutter_app/widgets/BestFoodWidget.dart';
-import 'package:flutter_app/widgets/BottomNavBarWidget.dart';
-import 'package:flutter_app/widgets/PopularFoodsWidget.dart';
-import 'package:flutter_app/widgets/SearchWidget.dart';
-import 'package:flutter_app/widgets/TopMenus.dart';
+import 'package:flutter_app/widgets/best_food_widget.dart';
+import 'package:flutter_app/widgets/bottom_nav_bar_widget.dart';
+import 'package:flutter_app/widgets/popular_foods_widget.dart';
+import 'package:flutter_app/widgets/search_widget.dart';
+import 'package:flutter_app/widgets/top_menus.dart';
 
 class HomePage extends StatefulWidget {
   @override
